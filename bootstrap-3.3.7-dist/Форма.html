@@ -1,0 +1,91 @@
+<html>
+<head>
+	<title>Обязательно к посещению!</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/manual.css">
+	
+	<style type="text/css">
+	
+		html, body 
+		{
+			font-family: Buxton Sketch;						
+		}
+
+		.popup 
+		{
+			width: 520px;
+			padding: 60px;
+			position: absolute;
+			top: 175px;
+			left: 35%;
+			background-color: #ffffff;
+			border-radius: 4px;
+		}
+				
+	</style>
+	
+</head>
+<body background = "https://www.motto.net.ua/pic/201406/1920x1080/motto.net.ua-79725.jpg">
+
+	<div class="popup">
+		<center> 
+		<h3>Форма заявки для нового заказа<small><br><br>Оставьте свои данные. Мы вам перезвоним</small></h3>
+		</center>	
+		<br>
+		<form action="" method="post">
+			<p><h5><strong>Выберите способ оплаты:<strong></h5></p>
+			
+			<label class="radio-inline">
+				<input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="наличные"> Наличными
+			</label>
+			<label class="radio-inline">
+				<input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="карта"> Картой
+			</label>
+			<label class="radio-inline">
+				<input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="электронные"> Электронными деньгами
+			</label>
+			<br>
+			<br>
+			
+			<div class="form-group">
+				<label for="exampleInputName2">Введите фамилию:</label>
+				<input type="text" pattern="[А-Яа-яЁё]{1,20}$" class="form-control" id="exampleInputName2" placeholder="Булгаков">
+			</div>
+  
+			<div class="form-group">
+				<label for="exampleInputName2">Введите имя:</label>
+				<input type="text" pattern="[А-Яа-яЁё]{1,20}$" class="form-control" id="exampleInputName2" placeholder="Михаил">
+			</div>
+			
+			<div class="form-group">
+				<label for="exampleInputName2">Введите номер телефона:</label>
+				<input type="tel" pattern="[0-9]{6}" class="form-control" id="exampleInputName2" placeholder="556499">
+			</div>
+
+			<div class="form-group">
+				<label for="exampleInputPassword1">Введите пароль:</label>
+				<input type="password" maxlength="7" class="form-control" id="exampleInputPassword1" placeholder="Пароль">
+			</div>
+			
+			<div align = "left">
+			<select>
+				<option selected value "Выбор даты и времени" disabled> Дата и время доставки </option>
+				<option value="1">16.03.17 в 19.30</option> 
+				<option value="2">17.03.17 в 19.30</option> 
+				<option value="3">18.03.17 в 19.30</option>
+				<option value="4">19.03.17 в 19.30</option>
+				<option value="5">20.03.17 в 19.30</option>
+			</select>
+			</div>
+			
+			<center>
+			<br>
+				<button type="submit" class="btn btn-danger">Отправить</button>
+				<button type="reset" class="btn btn-danger">Очистить</button>
+			</center>
+		</form>
+	</div>	
+</body>
+</html>
